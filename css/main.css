@@ -74,4 +74,24 @@ a {
   width: 1440px;
   padding: 0 110px;
   margin: 0 auto;
+}
+
+.button {
+  background-color: var(--accent-color);
+  color: var(--thirdy-color);
+  padding: 26px 38px;
+  border-radius: 14px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+}
+
+.button--white {
+  background-color: var(--thirdy-color);
+  color: var(--primary-color);
+  border: 1px solid #eff0f6;
+  -webkit-box-shadow: 0px 4px 10px rgba(20, 20, 43, 0.04);
+          box-shadow: 0px 4px 10px rgba(20, 20, 43, 0.04);
 }/*# sourceMappingURL=main.css.map */
