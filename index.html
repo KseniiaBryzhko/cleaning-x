@@ -21,11 +21,11 @@
       <img class="logo" src="./images/logo.png" alt="logo">
       <nav class="menu">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="">Services</a></li>
-          <li class="menu__item"><a class="menu__link" href="">Pages</a></li>
-          <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
+          <li class="menu__item"><a class="menu__link" href="#pages">Pages</a></li>
+          <li class="menu__item"><a class="menu__link" href="#contacts">Contact</a></li>
         </ul>
       </nav>
 
@@ -41,57 +41,70 @@
   <main>
     <section class="hero section">
       <div class="container">
-        <h1>Quality cleaning for your home</h1>
-        <p>Condimentum mauris sit cursus amet id non neque pharetra nulla ornare sed facilisis senectus dapibus nibh
-          ultrices eget
-          suscipit aliquet et nulla magna lacus penatibus.</p>
-        <div class="">
-          <button class="button" type="button">Get a free quote</button>
-          <button type="button">
-            <svg></svg>
-          </button>
-          <p>Call us now</p>
-          <p>(414) 567 - 2109</p>
+        <div class="hero__wrapper">
+          <h1 class="hero__title">Quality cleaning for your home</h1>
+          <p class="hero__descr">Condimentum mauris sit cursus amet id non neque pharetra nulla ornare sed facilisis
+            senectus dapibus nibh
+            ultrices eget
+            suscipit aliquet et nulla magna lacus penatibus.</p>
+          <div class="hero__thumb">
+            <button class="button" type="button">Get a free quote</button>
+            <a class="call" href="tel:4145672109" target="_blank" rel="noopener noreferrer nofollow"
+              aria-label="button call us">
+              <svg class="call__icon" width="34" height="34">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </a>
+            <div class="call__descr">
+              <p class="call__title">Call us now</p>
+              <p class="call__phone">(414) 567 - 2109</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero__image-wrapper">
+          <img class="hero__image" src="./images/hero.png" alt="woman cleans with vacuum-cleaner">
         </div>
       </div>
-      <img src="./images/hero.png" alt="woman cleans with vacuum-cleaner">
     </section>
 
-    <section class="about section">
+    <section class="about section" id="about">
       <div class="container">
-        <h2>How our service works?</h2>
-        <p>Sagittis nibh scelerisque vitae eget vulputate sem elementum sed neque nisi felis non ultrices massa id
+        <h2 class="about__title">How our service works?</h2>
+        <p class="about__descr">Sagittis nibh scelerisque vitae eget vulputate sem elementum sed neque nisi felis non
+          ultrices massa id
           egestas
           quam velit pretium nu.</p>
-        <ul>
-          <li>
-            <div>
-              <img src="./images/about/img-1.png" alt="schedule">
-              <h3>1. Schedule online</h3>
-              <p>Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n.</p>
+        <ul class="about__list">
+          <li class="about__item">
+            <div class="about__content">
+              <img class="about__image" src="./images/about/img-1.png" alt="schedule">
+              <h3 class="about__item-title">1. Schedule online</h3>
+              <p class="about__item-descr">Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n.</p>
             </div>
           </li>
-          <li>
+          <li class="about__item">
             <div>
-              <img src="./images/about/img-2.png" alt="Pay online">
-              <h3>2. Pay online easily</h3>
-              <p>Vitae ut accumsan blandit ullamcorperolm suscipit dui gravida amet at nunc.</p>
+              <img class="about__image" src="./images/about/img-2.png" alt="Pay online">
+              <h3 class="about__item-title">2. Pay online easily</h3>
+              <p class="about__item-descr">Vitae ut accumsan blandit ullamcorperolm suscipit dui gravida amet at nunc.
+              </p>
             </div>
           </li>
-          <li>
+          <li class="about__item">
             <div>
-              <img src="./images/about/img-3.png" alt="vacuum-cleaner">
-              <h3>3. Get your house cleaned</h3>
-              <p>Nunc maecenas sollicitudin metus tellus mattis sed porttitor cursus eleifend.</p>
+              <img class="about__image" src="./images/about/img-3.png" alt="vacuum-cleaner">
+              <h3 class="about__item-title">3. Get your house cleaned</h3>
+              <p class="about__item-descr">Nunc maecenas sollicitudin metus tellus mattis sed porttitor cursus eleifend.
+              </p>
             </div>
           </li>
         </ul>
 
-        <ul>
-          <li>
+        <ul class="about__button-list">
+          <li class="about__button-item">
             <button class="button" type="button">Get a free quote</button>
           </li>
-          <li>
+          <li class="about__button-item">
             <button class="button button--white" type="button">Explore services</button>
           </li>
         </ul>
@@ -125,7 +138,7 @@
       </div>
     </section>
 
-    <section class="services section">
+    <section class="services section" id="services">
       <div class="container">
         <div>
           <h2>Take a look at our professional services</h2>
@@ -227,7 +240,7 @@
       </div>
     </section>
 
-    <section class="articles section">
+    <section class="articles section" id="pages">
       <div class="container">
         <div>
           <h3>Articles & resources</h3>
@@ -308,7 +321,7 @@
       </div>
     </section>
 
-    <section class="contacts section">
+    <section class="contacts section" id="contacts">
       <div class="container">
         <div>
           <p>Quality cleaning for your home</p>
