@@ -1,0 +1,43 @@
+.safety__wrapper {
+  padding: 137px 74px 137px 72px;
+  max-width: 702px;
+}
+
+.safety__image-wrapper {
+  width: 518px;
+  height: 676px;
+}
+
+.safety__image {
+  width: 518px;
+  height: 676px;
+}
+
+.safety__uppertitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.13;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--thirdy-color);
+  margin-bottom: 16px;
+}
+
+.safety__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.21;
+  color: var(--thirdy-color);
+  margin-bottom: 18px;
+}
+
+.safety__descr {
+  font-size: 21px;
+  line-height: 1.43;
+  color: var(--thirdy-color);
+  margin-bottom: 12px;
+}
+
+.safety__thumb {
+  display: flex;
+}
