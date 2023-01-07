@@ -190,7 +190,7 @@
       </div>
     </section>
 
-    <section class="safety section">
+    <section class="safety section section--short">
       <div class="container">
         <div class="container--dark">
           <div class="safety__image-wrapper">
@@ -321,41 +321,46 @@
 
     <section class="articles section" id="pages">
       <div class="container">
-        <div>
-          <h3>Articles & resources</h3>
-          <p>Lobortis mattis odio leo eget mauris met aliquet semper molestie sollicitudin congue massa mauris lectus.
-          </p>
-          <ul>
-            <li>
+        <div class="articles__wrapper">
+          <div class="articles__title-wrapper">
+            <h3 class="articles__title">Articles & resources</h3>
+            <p class="articles__descr">Lobortis mattis odio leo eget mauris met aliquet semper molestie sollicitudin
+              congue massa mauris lectus.
+            </p>
+          </div>
+          <ul class="articles__button-list">
+            <li class="articles__button-item">
               <button class="button" type="button">Get a free quote</button>
             </li>
-            <li>
+            <li class="articles__button-item">
               <button class="button button--white" type="button">Browse articles</button>
             </li>
           </ul>
         </div>
-        <ul>
-          <li>
-            <div>
-              <img src="./images/articles/img-1.png" alt="vacuum-cleaner">
-              <div>
-                <h3>8 best vacuum cleaners to clean any mess for your home in 2022</h3>
-                <p>Lorem ipsum dolor sit amet conse ctetur adip iscing elit justo quis odio sit sit ac port titor sit
+        <ul class="articles__list">
+          <li class="articles__item">
+            <div class="articles__item-wrapper">
+              <img class="articles__image" src="./images/articles/img-1.png" alt="vacuum-cleaner">
+              <div class="articles__content">
+                <h3 class="articles__item-title">8 best vacuum cleaners to clean any mess for your home in 2022</h3>
+                <p class="articles__item-descr">Lorem ipsum dolor sit amet conse ctetur adip iscing elit justo quis odio
+                  sit sit ac port titor sit
                   males.</p>
-                <p>Jan 28, 2022</p>
-                <svg></svg>
+                <p class="date">Jan 28, 2022</p>
+                <a class="articles__link" href="#"></a>
               </div>
             </div>
           </li>
-          <li>
-            <div>
-              <img src="./images/articles/img-2.png" alt="woman cleans">
-              <div>
-                <h3>How to properly disinfect your phone and other electronics</h3>
-                <p>Lorem ipsum dolor sit amet conse ctetur adip iscing elit justo quis odio sit sit ac port titor sit
+          <li class="articles__item">
+            <div class="articles__item-wrapper">
+              <img class="articles__image" src="./images/articles/img-2.png" alt="woman cleans">
+              <div class="articles__content">
+                <h3 class="articles__item-title">How to properly disinfect your phone and other electronics</h3>
+                <p class="articles__item-descr">Lorem ipsum dolor sit amet conse ctetur adip iscing elit justo quis odio
+                  sit sit ac port titor sit
                   males.</p>
-                <p>Feb 1, 2022</p>
-                <svg></svg>
+                <p class="date">Feb 1, 2022</p>
+                <a class="articles__link" href="#"></a>
               </div>
             </div>
           </li>
@@ -363,38 +368,47 @@
       </div>
     </section>
 
-    <section class="request section">
-      <div class="container">
-        <div>
-          <h3>Request a free cleaning quote today</h3>
-          <p>In dignissim euismod pretium amet enim a eu nam ut urna accumsan pellentesque lacus duis pharetra eutortor.
+    <section class="request section section--gray">
+      <div class="container request__container">
+        <div class="request__wrapper">
+          <h3 class="request__title">Request a free cleaning quote today</h3>
+          <p class="request__descr">In dignissim euismod pretium amet enim a eu nam ut urna accumsan pellentesque lacus
+            duis pharetra eutortor.
           </p>
-          <div>
-            <button type="button">
-              <svg></svg>
-            </button>
-            <p>Call us now</p>
-            <p>(414) 567 - 2109</p>
+          <div class="request__call-wrapper">
+            <a class="call call--request" href="tel:4145672109" target="_blank" rel="noopener noreferrer nofollow"
+              aria-label="button call us">
+              <svg class="call__icon" width="34" height="34">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </a>
+            <div class="call__descr">
+              <p class="call__title call__title--request">Call us now</p>
+              <p class="call__phone">(414) 567 - 2109</p>
+            </div>
           </div>
-          <p>Not convinced yet?</p>
-          <p>Massa bibendum consectetur maurisid gravida purus, dolor dui amet morbi non nunc urna purus diam.</p>
+          <p class="request__undertitle">Not convinced yet?</p>
+          <p class="request__descr">Massa bibendum consectetur maurisid gravida purus, dolor dui amet morbi non nunc
+            urna purus diam.</p>
           <button class="button button--white" type="button">Browse our packages</button>
         </div>
 
-        <form action="">
-          <ul>
-            <li><label for=""><input type="text"></label></li>
-            <li><label for=""><input type="text"></label></li>
-            <li><label for=""><input type="text"></label></li>
-          </ul>
+        <form class="request__form">
+          <div class="request__list-wrapper">
+            <ul class="request__list">
+              <li class="request__item"><label>Full name<input type="text" name="full-name"></label></li>
+              <li class="request__item"><label>Address<input type="text" name="address"></label></li>
+              <li class="request__item"><label>Requested service<input type="text" name="service"></label></li>
+            </ul>
 
-          <ul>
-            <li><label for=""><input type="tel"></label></li>
-            <li><label for=""><input type="email"></label></li>
-            <li><label for=""><input type="date"></label></li>
-          </ul>
+            <ul class="request__list">
+              <li class="request__item"><label>Phone number<input type="tel" name="number"></label></li>
+              <li class="request__item"><label>Email<input type="email" name="email"></label></li>
+              <li class="request__item"><label>Day of service<input type="date" name="date"></label></li>
+            </ul>
+          </div>
 
-          <label for=""><textarea type="text"></textarea></label>
+          <label>Add a note<textarea type="text" name="note"></textarea></label>
           <button class="button" type="submit">Submit message</button>
         </form>
       </div>
