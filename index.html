@@ -414,62 +414,75 @@
       </div>
     </section>
 
-    <section class="contacts section" id="contacts">
-      <div class="container">
-        <div>
-          <p>Quality cleaning for your home</p>
-          <p>Lorem ipsum dolor sit amet cteturdo adipiscing elit, sed do eiusmo.</p>
-          <svg></svg>
-          <svg></svg>
-          <svg></svg>
-          <svg></svg>
-          <svg></svg>
+    <section class="contacts section section--shortest" id="contacts">
+      <div class="container contacts-container">
+        <div class="contacts__content">
+          <p class="contacts__content-title">Quality cleaning for your home</p>
+          <p class="contacts__content-descr">Lorem ipsum dolor sit amet cteturdo adipiscing elit, sed do eiusmo.</p>
+          <div class="contacts__content-icons">
+            <svg class="contacts__content-icon" width="36" height="36">
+              <use href="./images/icons.svg#icon-frame"></use>
+            </svg>
+            <svg class="contacts__content-icon" width="36" height="36">
+              <use href="./images/icons.svg#icon-frame"></use>
+            </svg>
+            <svg class="contacts__content-icon" width="36" height="36">
+              <use href="./images/icons.svg#icon-frame"></use>
+            </svg>
+            <svg class="contacts__content-icon" width="36" height="36">
+              <use href="./images/icons.svg#icon-frame"></use>
+            </svg>
+            <svg class="contacts__content-icon" width="36" height="36">
+              <use href="./images/icons.svg#icon-frame"></use>
+            </svg>
+          </div>
         </div>
 
-        <div>
-          <p>Contact us</p>
-          <address>
-            <ul>
-              <li><a href="">1827 Nickel Road, Los Angeles, CA, 90017, United States</a></li>
-              <li><a href="">(414) 567 - 2109</a></li>
-              <li><a href="">contact@cleaning.com</a></li>
+        <div class="contacts__data">
+          <p class="contacts__data-title">Contact us</p>
+          <address class="contacts__data-address">
+            <ul class="contacts__data-list">
+              <li class="contacts__data-item"><a class="contacts__data-link" href="#">1827 Nickel Road, Los Angeles, CA,
+                  90017, United States</a></li>
+              <li class="contacts__data-item"><a class="contacts__data-link" href="#">(414) 567 - 2109</a></li>
+              <li class="contacts__data-item"><a class="contacts__data-link" href="#">contact@cleaning.com</a></li>
             </ul>
           </address>
         </div>
 
-        <div>
-          <p>Hours</p>
-          <ul>
-            <li>
-              <p>Monday to Friday</p>
-              <p>6:00 AM - 9:00 PM</p>
+        <div class="contacts__worktime">
+          <p class="contacts__worktime-title">Hours</p>
+          <ul class="contacts__worktime-list">
+            <li class="contacts__worktime-item">
+              <p class="contacts__worktime-days">Monday to Friday</p>
+              <p class="contacts__worktime-hours">6:00 AM - 9:00 PM</p>
             </li>
             <li>
-              <p>Saturday & Sunday</p>
-              <p>8:00 AM - 8:00 PM</p>
+              <p class="contacts__worktime-days">Saturday & Sunday</p>
+              <p class="contacts__worktime-hours">8:00 AM - 8:00 PM</p>
             </li>
           </ul>
         </div>
 
-        <div>
-          <p>Get a free estimate</p>
-          <a href="">(414) 567 - 2109</a>
-          <p>Lorem ipsum dolor sit amet ectetur adipiscing elit, sed do eiusmod.</p>
+        <div class="contacts__request">
+          <p class="contacts__request-title">Get a free estimate</p>
+          <a class="contacts__request-link" href="tel:4145672109" target="_blank"
+            rel="noopener noreferrer nofollow">(414) 567 - 2109</a>
+          <p class="contacts__request-descr">Lorem ipsum dolor sit amet ectetur adipiscing elit, sed do eiusmod.</p>
           <button class="button" type="button">Request a free quote</button>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
+  <footer class="footer">
+    <div class="container footer__container">
       <img class="logo" src="./images/logo.png" alt="logo">
-      <div>
-        <p>Copyright ©</p>
-        <p>Cleaning X</p>
-        <p>Designed by <a href="">BRIX Templates</a></p>
-        <p>Powered by <a href="">Webflow</a></p>
-        <p><a href="">Licenses</a></p>
+      <div class="footer__copyright">
+        <p class="footer__content">Copyright © Cleaning X | Designed by <a class="footer__link" href="#">BRIX
+            Templates</a></p>
+        <p class="footer__content">- Powered by <a class="footer__link" href="#">Webflow</a></p>
+        <p class="footer__content">- <a class="footer__link" href="#">Licenses</a></p>
       </div>
     </div>
   </footer>

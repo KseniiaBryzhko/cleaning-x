@@ -1,0 +1,28 @@
+.footer__container {
+  display: flex;
+  padding-top: 43px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  display: flex;
+  gap: 14px;
+}
+
+.footer__content {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--secondary-color);
+}
+
+.footer__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
