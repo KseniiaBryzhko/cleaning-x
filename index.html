@@ -18,7 +18,10 @@
 <body>
   <header class="header container">
     <div class="header__wrapper">
-      <img class="logo" src="./images/logo.png" alt="logo">
+      <a href="#">
+        <img class="logo" src="./images/logo.png" alt="logo">
+      </a>
+
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
@@ -30,7 +33,9 @@
       </nav>
 
       <ul class="header__list">
-        <li class="header__item">Cart (0)</li>
+        <li class="header__item">
+          <a class="menu__link" href="#">Cart (0)</a>
+        </li>
         <li class="header__item">
           <button class="button" type="button">Get a free quote</button>
         </li>
@@ -120,28 +125,43 @@
           cras viverra gravida sapien.</p>
         <ul class="features__list">
           <li class="features__item">
-            <svg class="features__icon" width="34" height="34">
-              <use href="./images/icons.svg#icon-phone"></use>
+            <svg class="features__icon" width="72" height="72">
+              <use href="./images/icons.svg#icon-hearts"></use>
             </svg>
-            <p class="features__subtitle">clients</p>
-            <p class="features__numbers">3,480+</p>
+            <div class="features__content">
+              <p class="features__subtitle">clients</p>
+              <p class="features__numbers">3,480+</p>
+            </div>
+
           </li>
           <li class="features__item">
-            <svg class="features__icon" width="34" height="34">
-              <use href="./images/icons.svg#icon-phone"></use>
+            <svg class="features__icon" width="72" height="72">
+              <use href="./images/icons.svg#icon-ticked"></use>
             </svg>
-            <p class="features__subtitle">Jobs done</p>
-            <p class="features__numbers">12,540+</p>
+            <div class="features__content">
+              <p class="features__subtitle">Jobs done</p>
+              <p class="features__numbers">12,540+</p>
+            </div>
+
           </li>
           <li class="features__item">
-            <svg class="features__icon" width="34" height="34">
-              <use href="./images/icons.svg#icon-phone"></use>
+            <svg class="features__icon" width="72" height="72">
+              <use href="./images/icons.svg#icon-person"></use>
             </svg>
-            <p class="features__subtitle">Employees</p>
-            <p class="features__numbers">100+</p>
+            <div class="features__content">
+              <p class="features__subtitle">Employees</p>
+              <p class="features__numbers">100+</p>
+            </div>
+
           </li>
         </ul>
-        <img class="features__image" src="./images/feature.png" alt="man cleans table">
+        <div class="features__image-wrapper">
+          <a class="features__link" href="#">
+            <svg class="features__link-icon" width="56" height="62">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -477,7 +497,9 @@
 
   <footer class="footer">
     <div class="container footer__container">
-      <img class="logo" src="./images/logo.png" alt="logo">
+      <a href="#">
+        <img class="logo" src="./images/logo.png" alt="logo">
+      </a>
       <div class="footer__copyright">
         <p class="footer__content">Copyright © Cleaning X | Designed by <a class="footer__link" href="#">BRIX
             Templates</a></p>

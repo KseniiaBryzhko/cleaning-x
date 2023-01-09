@@ -5,14 +5,27 @@
   width: 71px;
   height: 71px;
   background-color: var(--thirdy-color);
+  color: var(--accent-color);
   border-radius: 50%;
   border: 1px solid #dcddeb;
   box-shadow: 0px 4px 10px rgba(20, 20, 43, 0.04);
   margin-left: 28px;
+
+  transition: color 100ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 100ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 100ms cubic-bezier(0.4, 0, 0.2, 1), border 100ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 8px rgba(20, 20, 43, 0.6);
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    color: var(--thirdy-color);
+  }
 }
 
 .call__icon {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .call__descr {

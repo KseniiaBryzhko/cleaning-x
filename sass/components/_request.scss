@@ -60,6 +60,13 @@ label {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
+
+  transition: color 100ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 input,
@@ -74,6 +81,13 @@ textarea {
   padding: 12px;
   overflow: hidden;
   outline: none;
+
+  transition: border 100ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 input[type='date'] {
